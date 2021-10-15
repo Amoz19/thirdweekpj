@@ -8,16 +8,13 @@ body{
 
 
 nav{
-    /* width: 100%; */
     padding-left: 80px;
-    background-color: #FAFAFA;
+    background:#FAFAFA;
     opacity: 0.9;
 
     display: flex;
-    /* position: absolute; */
-    /* position: fixed; */
-    
-    /* z-index: 2;   */
+    position: sticky;
+    top: 0;
 } 
 
 nav h2,h3{
@@ -38,47 +35,44 @@ nav h3{
 nav .menu{
     width: 100%;
     line-height: 68px;
-    margin-left: 300px;   
+    margin-left: 350px;   
 }
 
 nav .menu a{
     text-decoration: none;
     color: #000;
-    margin-left: 50px;
+    margin-left: 40px;
     line-height: 68px;
+}
+
+nav .menu i{
+    margin-left: 40px;
 }
 
 nav .menu a:hover{
     border-bottom: 3px solid #000;
 }
 
-nav .menu button{
-    margin:0 40px;
-    border-radius: 8px;
-    border: none;
-    padding: 10px 15px;
-    background-color: #000;
-    color:#fff;
-
+nav .span-search{
     position: relative;
 }
 
-nav button::after{
+nav .span-search::after{
     content: '';
     width: 3px;
     height: 32px;
     background-color:#000;
     
     position:absolute;
-    top: 1px;
-    left:130%;
+    top: -5px;
+    left:60%;
     transform: rotateY(90);
 }
 
 .book-detail{
     width: 700px;
     display: flex;
-    margin-left: 200px;
+    margin:15px 0 0 200px;
 }
 
 .book-detail img{
@@ -86,15 +80,69 @@ nav button::after{
     height: 200px;
 }
 
-
-
 .book-detail .book-detail-caption a{
     display: block;
+    text-decoration: none;
+    color:hsl(48, 93%, 50%);
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.book-detail .book-detail-caption{
+    margin-left: 7px;
+}
+
+.book-detail .book-detail-caption p{
+    text-align: justify;
+}
+
+.book-detail .book-detail-caption span{
+    margin-left: 5px;
+}
+
+.book-detail .book-detail-caption h2,.book-detail .book-detail-caption a{
+    margin: 0 0 23px 0;
+}
+
+.book-detail .book-detail-to-buy a{
+    text-decoration: none;
+    color: #000;
+    background:#EFCB3B;
+    padding: 5px 72px;
+    border-radius: 2px;
+    text-align: right;
+}
+
+.book-detail-to-detail{
+    display: flex;
+}
+.book-detail-to-detail .about-detail{
+    width: 50%;
+}
+
+.book-detail-to-detail .about-detail-share{
+    width: 50%;
+    font-size: 30px;
+    margin:110px 0 0 150px;
+}
+
+.book-detail-to-detail .about-detail-share i{
+    margin-left: 20px;
+}
+
+.book-detail .book-detail-to-buy img{
+    margin-bottom: 8px;
+}
+
+.book-detail .book-detail-caption i{
+    margin-bottom: 15px;
 }
 .footer{
     display: flex;
     
-    background-color: #FAFAFA;
+    background:#EFCB3B;
 }
 
 .a-for-footer{
