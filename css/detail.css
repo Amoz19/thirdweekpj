@@ -65,8 +65,8 @@ nav .span-search::after{
     
     position:absolute;
     top: -5px;
-    left:60%;
-    transform: rotateY(90);
+    left:130%;
+   /* transform: rotateY(90);*/
 }
 
 .book-detail{
@@ -110,7 +110,7 @@ nav .span-search::after{
     text-decoration: none;
     color: #000;
     background:#EFCB3B;
-    padding: 5px 72px;
+    padding: 5px 59px;
     border-radius: 2px;
     text-align: right;
 }
@@ -124,7 +124,7 @@ nav .span-search::after{
 
 .book-detail-to-detail .about-detail-share{
     width: 50%;
-    font-size: 30px;
+    font-size: 25px;
     margin:110px 0 0 150px;
 }
 
